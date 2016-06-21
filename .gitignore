@@ -1,0 +1,14 @@
+#cache files
+__pycache__/
+*.pyc
+*.pyo
+
+#log files
+*.log
+
+#IDE files
+.project
+.pydevproject
+
+#settings files
+/settings.py
