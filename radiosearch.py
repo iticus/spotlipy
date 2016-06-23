@@ -5,25 +5,12 @@ Created on Jun 21, 2016
 '''
 
 import bs4
+import datetime
+import logging
 import requests
 import time
 
 import settings
-
-
-data = {
-    'artist': '',
-    'title': '',
-    #'channel': channel,
-    #'month': month,
-    #'date': date,
-    'shour': '',
-    'sampm': '',
-    'stz': '',
-    'ehour': '',
-    'eampm': '', 
-    #'page': ''
-}
 
 
 def get_songs_from_html(html):
@@ -50,9 +37,10 @@ def get_songs_from_html(html):
             'channel': cells[0].text, 
             'artist': cells[1].text,
             'title': cells[2].text,
-            'date': cells[3].text,
-            'time': cells[4].text,
+            'played': datetime.datetime.strptime(cells[3].text+cells[4].text, '%m/%d/%Y%I:%M:%S %p')
         }
+        
+        logging.debug('found song: %s' % song)
         songs.append(song)
     
     return songs
@@ -60,6 +48,7 @@ def get_songs_from_html(html):
 
 def find_songs(channel, month, date):
     songs = []
+    data = {}
     data['channel'] = channel
     data['month'] = month
     data['date'] = date
@@ -67,7 +56,9 @@ def find_songs(channel, month, date):
     page = 1
     while True:
         r = requests.get(settings.SEARCH_URL, params=data)
+        logging.debug('received response of length %d on page %d' % (len(r.content), page))
         result = get_songs_from_html(r.content)
+        logging.debug('found %d songs in response' % len(result))
         if not result:
             break
         
@@ -76,5 +67,6 @@ def find_songs(channel, month, date):
         page += 1
         time.sleep(1)
 
+    logging.info('completed search, total %d songs' % len(songs))
     return songs
     
