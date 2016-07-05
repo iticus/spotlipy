@@ -12,6 +12,8 @@ import time
 
 import settings
 
+logger = logging.getLogger('radiosearch')
+
 
 def get_songs_from_html(html):
     songs = []
@@ -40,7 +42,7 @@ def get_songs_from_html(html):
             'played': datetime.datetime.strptime(cells[3].text+cells[4].text, '%m/%d/%Y%I:%M:%S %p')
         }
         
-        logging.debug('found song: %s' % song)
+        logger.debug('found song: %s' % song)
         songs.append(song)
     
     return songs
@@ -56,9 +58,9 @@ def find_songs(channel, month, date):
     page = 1
     while True:
         r = requests.get(settings.SEARCH_URL, params=data)
-        logging.debug('received response of length %d on page %d' % (len(r.content), page))
+        logger.debug('received response of length %d on page %d' % (len(r.content), page))
         result = get_songs_from_html(r.content)
-        logging.debug('found %d songs in response' % len(result))
+        logger.debug('found %d songs in response' % len(result))
         if not result:
             break
         
@@ -67,6 +69,6 @@ def find_songs(channel, month, date):
         page += 1
         time.sleep(1)
 
-    logging.info('completed search, total %d songs' % len(songs))
+    logger.info('completed search, total %d songs' % len(songs))
     return songs
     
