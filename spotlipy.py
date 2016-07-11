@@ -5,11 +5,12 @@ Created on Jun 20, 2016
 '''
 
 import logging
+import spotify_sdk
+import time
 
 import database
 import radiosearch
 import settings
-import spotify
 
 logger = logging.getLogger('spotlipy')
 logger.info('starting spotlipy application')
@@ -29,16 +30,20 @@ for station in settings.STATIONS:
 logger.info('performing spotify song search')
 unprocessed_songs = database.get_unprocessed_songs()
 for song in unprocessed_songs:
-    status = 0
-    spotify_song = spotify.search_song(song)
+    status = 2
+    url = None
+    logger.info('searching for %s by %s' % (song['title'], song['artist']))
+    spotify_song = spotify_sdk.search_song(song)
     if spotify_song:
         status = 1
-    else:
-        status = 2
-    
-    result = database.update_song(song['id'], status, spotify_song)
+        url = spotify_song.link.url
+        logger.info('found %s (%s by %s)' % (url, song['title'], song['artist']))
+
+    result = database.update_song(song['id'], status, url)
     if result:
-        logger.info('updated song %s by %s with %s' % (song['title'], song['artist'], spotify_song))
+        logger.info('updated song %s by %s with %s' % (song['title'], song['artist'], url))
+    
+    time.sleep(1.5)
     
     #TODO: implement remaining logic
     
