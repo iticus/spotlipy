@@ -23,3 +23,7 @@ STATIONS = [
 
 MONTH = 6
 DATE = 15
+
+#Spotify settings
+SPOTIFY_USR = 'usr'
+SPOTIFY_PWD = 'pwd'
