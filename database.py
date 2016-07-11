@@ -54,7 +54,7 @@ def update_song(song_id, status, spotify_id=None):
     cursor = _dbconn.cursor(cursor_factory=DictCursor)
     query = "UPDATE songs SET status=%s, spotify_id=%s WHERE id=%s RETURNING id"
     try:
-        cursor.execute(query, (song_id, spotify_id, status))
+        cursor.execute(query, (status, spotify_id, song_id))
         _dbconn.commit()
     except Exception as e:
         logger.error('could not update song %s: %s' % (song_id, e))

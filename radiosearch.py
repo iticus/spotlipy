@@ -7,12 +7,18 @@ Created on Jun 21, 2016
 import bs4
 import datetime
 import logging
+import re
 import requests
 import time
 
 import settings
 
 logger = logging.getLogger('radiosearch')
+year_regex = re.compile('\([0-9]{2,4}\)')
+
+
+def clean_song_name(name):
+    return year_regex.sub('', name).strip()
 
 
 def get_songs_from_html(html):
@@ -38,7 +44,7 @@ def get_songs_from_html(html):
         song = {
             'channel': cells[0].text, 
             'artist': cells[1].text,
-            'title': cells[2].text,
+            'title': clean_song_name(cells[2].text),
             'played': datetime.datetime.strptime(cells[3].text+cells[4].text, '%m/%d/%Y%I:%M:%S %p')
         }
         
