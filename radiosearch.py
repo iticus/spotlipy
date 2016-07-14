@@ -48,6 +48,9 @@ def get_songs_from_html(html):
             'played': datetime.datetime.strptime(cells[3].text+cells[4].text, '%m/%d/%Y%I:%M:%S %p')
         }
         
+        if not song['artist'] or not song['title']:
+            continue #empty data from website
+        
         logger.debug('found song: %s' % song)
         songs.append(song)
     
