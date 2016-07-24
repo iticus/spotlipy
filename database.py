@@ -38,11 +38,27 @@ def insert_song(song):
 
 def get_unprocessed_songs():
     cursor = _dbconn.cursor(cursor_factory=DictCursor)
-    query = "SELECT id, channel, artist, title FROM songs WHERE status=0"
+    query = "SELECT id, channel, artist, title, spotify_id FROM songs WHERE status=0"
     try:
         cursor.execute(query)
     except Exception as e:
         logger.error('could not retrieve unprocessed songs: %s' % e)
+        return []
+    
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
+
+
+def get_found_songs():
+    cursor = _dbconn.cursor(cursor_factory=DictCursor)
+    query = """SELECT id, channel, artist, title, spotify_id 
+    FROM songs INNER JOIN playlists on songs.channel = playlists.channel
+    WHERE songs.status=1"""
+    try:
+        cursor.execute(query)
+    except Exception as e:
+        logger.error('could not retrieve found songs: %s' % e)
         return []
     
     rows = cursor.fetchall()

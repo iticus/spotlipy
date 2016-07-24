@@ -32,6 +32,7 @@ unprocessed_songs = database.get_unprocessed_songs()
 for song in unprocessed_songs:
     status = 2
     url = None
+    
     logger.info('searching for %s by %s' % (song['title'], song['artist']))
     spotify_song = spotify_sdk.search_song(song)
     if spotify_song:
@@ -42,8 +43,16 @@ for song in unprocessed_songs:
     result = database.update_song(song['id'], status, url)
     if result:
         logger.info('updated song %s by %s with %s' % (song['title'], song['artist'], url))
+
+    time.sleep(3)
+
+logger.info('performing tracks insert into spotify playlist')
+found_songs = database.get_found_songs()
+for song in found_songs:
+    status = 3
+    spotify_sdk.add_tracks(playlist_url, tracks)
+        
     
-    time.sleep(1.5)
     
     #TODO: implement remaining logic
     

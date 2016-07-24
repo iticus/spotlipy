@@ -76,7 +76,7 @@ def find_songs(channel, month, date):
         songs.extend(result)
         data['page'] = page
         page += 1
-        time.sleep(1)
+        time.sleep(3)
 
     logger.info('completed search, total %d songs' % len(songs))
     return songs
