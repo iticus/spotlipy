@@ -5,7 +5,7 @@ Created on Jun 20, 2016
 '''
 
 import logging
-import spotify_sdk
+import spotify_api
 import time
 
 import database
@@ -19,6 +19,7 @@ month = settings.MONTH
 date = settings.DATE
 logger.info('performing radio search')
 for station in settings.STATIONS:
+    continue
     logger.info('searching songs on station %d, month: %d, date: %d' % (
         station, month, date))
     songs = radiosearch.find_songs(station, month, date)
@@ -27,6 +28,7 @@ for station in settings.STATIONS:
         if result:
             logger.info('inserted song %s by %s' % (song['title'], song['artist']))
 
+
 logger.info('performing spotify song search')
 unprocessed_songs = database.get_unprocessed_songs()
 for song in unprocessed_songs:
@@ -34,7 +36,12 @@ for song in unprocessed_songs:
     url = None
     
     logger.info('searching for %s by %s' % (song['title'], song['artist']))
-    spotify_song = spotify_sdk.search_song(song)
+    try:
+        spotify_song = spotify_api.search_song(song)
+    except Exception as e:
+        logger.error('cannot search for spotify song: %s' % e)
+        continue
+        
     if spotify_song:
         status = 1
         url = spotify_song.link.url
@@ -46,11 +53,28 @@ for song in unprocessed_songs:
 
     time.sleep(3)
 
+
 logger.info('performing tracks insert into spotify playlist')
 found_songs = database.get_found_songs()
+
+songs_by_playlist = {}
 for song in found_songs:
-    status = 3
-    spotify_sdk.add_tracks(playlist_url, tracks)
+    songs_by_playlist.setdefault(song['spotify_playlist'], []).append(song['spotify_url'])
+
+
+for playlist_url, values in songs_by_playlist.items():
+    
+    while values:
+        tracks = values[:100]
+        values[:100] = []
+        try:
+            spotify_api.add_tracks(playlist_url, tracks)
+        except Exception as e:
+            logging.error('cannot add tracks to playlist: %s' % e)
+            continue
+    
+    #TODO: update songs
+    
         
     
     
