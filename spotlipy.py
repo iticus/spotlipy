@@ -69,7 +69,7 @@ for playlist_url, values in songs_by_playlist.items():
         song_ids = values['song_ids'][:100]
         del values['track_ids'][:100]
         del values['song_ids'][:100]
-        logging.info('inserting %d tracks into %s' % (len(tracks_ids, playlist_url)))
+        logging.info('inserting %d tracks into %s' % (len(tracks_ids), playlist_url))
         try:
             spotify_api.add_tracks(playlist_url, tracks_ids)
         except Exception as e:
