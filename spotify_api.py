@@ -9,7 +9,6 @@ import spotipy.util
 
 from settings import SPOTIFY
 
-
 logger = logging.getLogger('sdk')
 token = spotipy.util.prompt_for_user_token(SPOTIFY['username'], SPOTIFY['api_scopes'], client_id=SPOTIFY['client_id'],
     client_secret=SPOTIFY['client_secret'], redirect_uri=SPOTIFY['redirect_url'])
@@ -32,6 +31,10 @@ def search_song(song):
     return track
  
 
-
 def add_tracks(playlist_url, tracks):
     _sp.user_playlist_add_tracks(SPOTIFY['username'], playlist_url, tracks)
+
+
+def clear_playlist(playlist_url, tracks):
+    _sp.user_playlist_remove_all_occurrences_of_tracks(
+        SPOTIFY['username'], playlist_url, tracks)
