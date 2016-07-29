@@ -5,8 +5,7 @@ Created on Jun 28, 2016
 '''
 
 import logging
-import spotipy, spotipy.util
-import time
+import spotipy.util
 
 from settings import SPOTIFY
 
@@ -24,7 +23,7 @@ else:
 
 def search_song(song):
     song['artist'] = song['artist'].replace('/', ' ') #search improvement ("/" is usually not found)    
-    results = _sp.search(query='artist:"%s" title:"%s"' % (song['artist'], song['title']), type='track') 
+    results = _sp.search(q='artist:"%s" title:"%s"' % (song['artist'], song['title']), type='track') 
     
     if not results['tracks']['items']:
         return None
@@ -36,6 +35,3 @@ def search_song(song):
 
 def add_tracks(playlist_url, tracks):
     _sp.user_playlist_add_tracks(SPOTIFY['username'], playlist_url, tracks)
-
-                    
-    

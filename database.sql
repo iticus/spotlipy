@@ -9,7 +9,7 @@ CREATE TABLE songs(
     played timestamp without time zone NOT NULL,
     found timestamp without time zone NOT NULL,
     status smallint NOT NULL DEFAULT 0,
-    spotify_url text DEFAULT NULL,
+    spotify_uri text DEFAULT NULL,
     UNIQUE (channel, artist, title)
 );
 CREATE INDEX ON songs(channel);

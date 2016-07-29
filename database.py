@@ -38,7 +38,7 @@ def insert_song(song):
 
 def get_unprocessed_songs():
     cursor = _dbconn.cursor(cursor_factory=DictCursor)
-    query = "SELECT id, channel, artist, title, spotify_url FROM songs WHERE status=0"
+    query = "SELECT id, channel, artist, title, spotify_uri FROM songs WHERE status=0"
     try:
         cursor.execute(query)
     except Exception as e:
@@ -52,7 +52,7 @@ def get_unprocessed_songs():
 
 def get_found_songs():
     cursor = _dbconn.cursor(cursor_factory=DictCursor)
-    query = """SELECT songs.id, songs.channel, songs.artist, songs.title, songs.spotify_url, playlists.spotify_playlist 
+    query = """SELECT songs.id, songs.channel, songs.artist, songs.title, songs.spotify_uri, playlists.spotify_playlist 
     FROM songs INNER JOIN playlists on songs.channel = playlists.channel
     WHERE songs.status=1"""
     try:
@@ -66,11 +66,11 @@ def get_found_songs():
     return rows
 
 
-def update_song(song_id, status, spotify_url=None):
+def update_song(song_id, status, spotify_uri=None):
     cursor = _dbconn.cursor(cursor_factory=DictCursor)
-    query = "UPDATE songs SET status=%s, spotify_url=%s WHERE id=%s RETURNING id"
+    query = "UPDATE songs SET status=%s, spotify_uri=%s WHERE id=%s RETURNING id"
     try:
-        cursor.execute(query, (status, spotify_url, song_id))
+        cursor.execute(query, (status, spotify_uri, song_id))
         _dbconn.commit()
     except Exception as e:
         logger.error('could not update song %s: %s' % (song_id, e))
