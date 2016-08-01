@@ -1,54 +1,479 @@
+1 - XM Preview
+2 - SiriusXM Hits 1
+3 - Venus
 4 - Pitbull's Globalization
 5 - '50s on 5
 6 - '60s on 6
 8 - '80s on 8
-9 - KIIS-Los Angeles
-12 - The Message
-13 - Kirk Franklin's Praise
-14 - enLighten
-16 - Outlaw Country
-17 - Bluegrass Junction
-23 - Venus
-25 - SiriusXM Hits 1
-26 - Z100/NY
-27 - 1st Wave
-28 - Symphony Hall
-30 - Hair Nation
-32 - Watercolors
-33 - Spa
-34 - Real Jazz
-40 - The Blend
-41 - Grateful Dead Channel
-42 - Deep Tracks
-43 - Classic Vinyl
-47 - Underground Garage
-48 - E Street Radio
-50 - Jam_ON
-51 - The Loft
-52 - The Spectrum
-53 - Elvis Radio
-54 - Radio Margaritaville
-55 - The Coffee House
-56 - SiriusXM Love
-57 - The Bridge
-58 - Pop2K
-59 - Classic Rewind
-60 - SiriusXM Chill
-62 - BPM
-66 - Shade 45
-67 - Liquid Metal
-68 - The Groove
-70 - On Broadway
+9 - '90s on 9
+10 - Pop2K
+11 - KIIS-Los Angeles
+12 - Z100/NY
+16 - The Blend
+17 - SiriusXM Love
+19 - Elvis Radio
+20 - E Street Radio
+21 - Underground Garage
+23 - Grateful Dead Channel
+24 - Radio Margaritaville
+25 - Classic Rewind
+26 - Classic Vinyl
+27 - Deep Tracks
+28 - The Spectrum
+29 - Jam_ON
+30 - The Loft
+31 - The Coffee House
+32 - The Bridge
+33 - 1st Wave
+34 - Lithium
+35 - SiriusXMU
+36 - Alt Nation
+37 - Octane
+38 - Ozzy's Boneyard
+39 - Hair Nation
+40 - Liquid Metal
+42 - The Joint
+44 - Hip-Hop Nation
+45 - Shade 45
+46 - Backspin
+47 - The Heat
+48 - Heart & Soul
+49 - Soul Town
+50 - The Groove
+51 - BPM
+52 - Electric Area
+53 - SiriusXM Chill
+54 - Studio 54 Radio
+55 - Utopia
+56 - The Highway
+57 - Y2Kountry
+58 - Prime Country
+59 - Willie's Roadhouse
+60 - Outlaw Country
+61 - Bluegrass Junction
+63 - The Message
+64 - Kirk Franklin's Praise
+65 - enLighten
+66 - Watercolors
+67 - Real Jazz
+68 - Spa
+69 - Escape
+70 - BB King's Bluesville
 71 - Siriusly Sinatra
-72 - 40s
+72 - On Broadway
+73 - 40s
 74 - Met Opera Radio
-75 - KIDZ BOP Radio
-76 - Doctor Radio
-77 - Radio Disney
-78 - RURAL RADIO
-79 - Kids Place Live
-80 - Ozzy's Boneyard
-81 - Alt Nation
-84 - SiriusXMU
-85 - ESPN Radio
-86 - ESPN Xtra
+76 - Symphony Hall
+77 - KIDZ BOP Radio
+78 - Kids Place Live
+79 - Radio Disney
+80 - RURAL RADIO
+81 - Doctor Radio
+82 - RadioClassics
+83 - ESPN Radio
+84 - ESPN Xtra
+85 - Mad Dog Sports Radio
+86 - SiriusXM NBA Radio
+87 - SiriusXM Fantasy Sports Radio
+88 - SiriusXM NFL Radio
+89 - MLB Network Radio™
+90 - SiriusXM NASCAR Radio
+91 - SiriusXM College Sports Nation
+92 - SiriusXM Sports Zone
+93 - SiriusXM PGA TOUR Radio
+94 - SiriusXM FC
+95 - Comedy Central Radio
+96 - The Foxxhole
+97 - Jeff & Larry's Comedy Roundup
+98 - Laugh USA
+99 - Raw Dog Comedy Hits
+100 - Howard 100
+101 - Howard 101
+102 - Indie
+103 - Opie Radio
+105 - Entertainment Weekly Radio
+106 - OutQ
+107 - SiriusXM
+108 - Today Show Radio
+109 - SiriusXM Stars
+110 - Urban View
+111 - Business Radio
+112 - CNBC
+114 - FOX News Channel
+115 - CNN
+116 - HLN
+117 - MSNBC
+118 - BBC World Service
+119 - Bloomberg Radio
+120 - C-SPAN Radio
+121 - SiriusXM Insight
+122 - NPR Now
+123 - PRX Public Radio
+124 - POTUS Politics
+125 - SiriusXM Patriot
+126 - SiriusXM Urban View
+128 - Joel Osteen Radio
+129 - The Catholic Channel
+130 - EWTN Radio
+132 - Boston/Philadelphia/Pittsburgh
+133 - New York
+134 - Washington, DC/Baltimore/Atlanta
+135 - Chicago/Detroit
+136 - Miami/Orlando/Tampa-St. Pete
+137 - Dallas-Ft. Worth/Houston/Phoenix
+138 - St. Louis/Minneapolis
+139 - San Francisco/Seattle
+140 - Los Angeles/San Diego
+141 - HUR Voices
+142 - HBCU
+143 - BYU Radio
+144 - Korea Today
+146 - Road Dog Trucking
+147 - SiriusXM 147
+148 - Águila
+150 - Caliente
+151 - Aguila
+152 - En Vivo
+153 - Cristina Radio
+154 - American Latino Radio
+155 - CNN en Español
+156 - RadioFórmula México
+157 - ESPN Deportes
+158 - beIN SPORTS en Español
+159 - MLB en Español
+161 - Iceberg
+162 - CBC Radio 3
+163 - Ici Musique Chansons
+164 - Attitude Franco
+165 - Multicultural Radio
+166 - Ici Musique FrancoCountry
+167 - Canada Talks
+168 - Canada Laughs
+169 - CBC Radio One
+170 - Ici Première
+171 - CBC Music: Sonica
+172 - Canada 360 by AMI
+173 - The Verge
+174 - Influence Franco
+176 - MLB Play-by-Play 176
+177 - MLB Play-by-Play 177
+178 - MLB Play-by-Play 178
+179 - MLB Play-by-Play 179
+180 - MLB Play-by-Play 180
+181 - MLB Play-by-Play 181
+182 - MLB Play-by-Play 182
+183 - MLB Play-by-Play 183
+184 - MLB Play-by-Play 184
+185 - MLB Play-by-Play 185
+186 - MLB Play-by-Play 186
+187 - MLB Play-by-Play 187
+188 - MLB Play-by-Play 188
+189 - MLB Play-by-Play 189
+190 - SEC Play-by-Play 190
+191 - SEC Play-by-Play 191
+192 - SEC Play-by-Play 192
+193 - ACC Play-by-Play 193
+194 - ACC Play-by-Play 194
+195 - Big Ten Play-by-Play 195
+196 - Big Ten Play-by-Play 196
+197 - PAC-12 Play-by-Play 197
+198 - PAC-12 Play-by-Play 198
+199 - Big 12 Play-by-Play 199
+200 - Big 12 Play-by-Play 200
+201 - Sports Play-by-Play 201
+202 - Sports Play-by-Play 202
+203 - Sports Play-by-Play 203
+204 - Sports Play-by-Play 204
+205 - Sports Play-by-Play 205
+206 - Sports Play-by-Play 206
+207 - Sports Play-by-Play 207
+208 - SiriusXM Bleacher Report Radio
+209 - Verizon IndyCar Series
+210 - Sports Play-by-Play 210
+211 - Sports Play-by-Play 211
+212 - NBA Play-by-Play 212
+213 - NBA Play-by-Play 213
+214 - NBA Play-by-Play 214
+215 - NBA Play-by-Play 215
+216 - NBA Play-by-Play 216
+217 - NBA Play-by-Play 217
+218 - SiriusXM NHL Network Radio
+219 - NHL Play-by-Play 219
+220 - NHL Play-by-Play 220
+221 - NHL Play-by-Play 221
+222 - NHL Play-by-Play 222
+223 - NHL Play-by-Play 223
+225 - NFL Play-by-Play 225
+226 - NFL Play-by-Play 226
+227 - Sports Play-by-Play 227
+228 - NFL Play-by-Play 228
+229 - NFL Play-by-Play 229
+230 - NFL Play-by-Play 230
+231 - NFL Play-by-Play 231
+232 - NFL Play-by-Play 232
+233 - NFL Play-by-Play 233
+234 - NFL Play-by-Play 234
+235 - Sports Play-by-Play 235
+236 - Sports Play-by-Play 236
+263 - Biz-SiriusXM Hits 1
+264 - Biz-Chill
+265 - Biz-Spectrum
+266 - Biz-Coffeehouse
+267 - Biz-Soul Town
+268 - Biz-Viva
+270 - Biz-Prime Country
+271 - Biz-Bridge
+272 - Biz-Watercolors
+273 - Biz-The Loft
+274 - Biz-Classic Rewind
+277 - Biz-Classic Vinyl
+278 - Biz-Spa
+279 - Biz-60s on 6
+280 - Biz-90s on 9
+281 - Biz-Blend
+283 - Biz-BPM
+285 - Biz-Lithium
+287 - Biz-Real Jazz
+288 - Biz-SiriusXM Pops
+289 - Biz-Studio 54
+310 - Rock and Roll Hall of Fame Radio
+311 - The Pink Floyd Channel
+312 - Tom Petty's Buried Treasure
+313 - RockBar
+316 - SiriusXM Comes Alive!
+319 - Classic College Radio
+340 - Tiësto's Club Life Radio
+350 - Red White & Booze
+360 - Krishna Das Yoga Radio
+370 - SportsCenter
+391 - College Sports Nation
+400 - Carlin's Corner
+403 - Just For Laughs Radio
+424 - SXIR POTUS
+425 - SiriusXM Patriot
+450 - FOX News Talk
+500 - Viva
+506 - Flow Nación
+520 - Latidos
+523 - Caricia
+530 - Luna
+533 - Rumbón
+540 - La Kueva
+563 - Entretenimiento SiriusXM
+604 - 40s on 4
+617 - SiriusXM Love
+640 - Liquid Metal
+646 - Backspin
+658 - Prime Country
+669 - Escape
+675 - SiriusXM Pops
+685 - ESPN Xtra
+686 - Mad Dog Radio
+700 - Neil Diamond Radio
+701 - BBC Radio 1
+702 - Velvet
+703 - Elevations
+704 - Indie
+705 - SiriusXM Limited Engagements
+707 - SiriusXM Stars
+709 - Biz-Holiday Seasonal
+713 - Jason Ellis
+714 - Mandatory Metalica
+715 - SiriusXM Limited Engagements 2
+716 - SiriusXM Limited Engagements 3
+720 - Sway's Universe
+721 - SiriusXM Limited Engagements 4
+724 - SiriusXM Silk
+725 - SiriusXM Fly
+726 - SiriusXM Limited Engagements 5
+730 - SiriusXM Limited Engagements 6
+740 - Y2Kountry
+741 - The Village
+749 - ESPN Deportes
+750 - Cinemagic
+751 - SiriusXM Limited Engagements 9
+752 - Holly
+753 - Holiday Pops
+754 - Country Christmas
+755 - Holiday Soul
+756 - Navidad
+757 - Radio Hanukkah
+760 - SiriusXM Pops
+762 - Christmas Radio
+765 - Biz-Taste of Italy
+770 - 70s/80s Pop
+771 - 80s/90s Pop
+772 - 90s/2K Pop
+773 - Classic Rock Party
+774 - Rockin' Frat Party
+775 - Hip-Hop Party
+776 - Oldies Party
+777 - Pop Party Mix
+778 - Punk Party
+779 - New Wave Dance Party
+780 - The Girls' Room
+781 - Holly
+790 - SiriusXM Limited Engagements 11
+791 - Vivid Radio
+793 - Martha Stewart
+794 - SiriusXM Preview
+796 - TheBlaze Radio Network
+797 - SiriusXM Patriot Plus
+799 - SiriusXM OnDemand
+800 - NFL-ARI
+801 - NFL-ATL
+802 - NFL-BAL
+803 - NFL-BUF
+804 - NFL-CAR
+805 - NFL-CHI
+806 - NFL-CIN
+807 - NFL-CLE
+808 - NFL-DAL
+809 - NFL-DEN
+810 - NFL-DET
+811 - NFL-GB
+812 - NFL-HOU
+813 - NFL-IND
+814 - NFL-JAX
+815 - NFL-KC
+816 - NFL-MIA
+817 - NFL-MIN
+818 - NFL-NE
+819 - NFL-NO
+820 - NFL-NYG
+821 - NFL-NYJ
+822 - NFL-OAK
+823 - NFL-PHI
+824 - NFL-PIT
+825 - NFL-SD
+826 - NFL-SEA
+827 - NFL-SF
+828 - NFL-STL
+829 - NFL-TB
+830 - NFL-TEN
+831 - NFL-WAS
+840 - Arizona Diamondbacks
+841 - Atlanta Braves
+842 - Baltimore Orioles
+843 - Boston Red Sox
+844 - Chicago Cubs
+845 - Chicago White Sox
+846 - Cincinnati Reds
+847 - Cleveland Indians
+848 - Colorado Rockies
+849 - Detroit Tigers
+850 - Houston Astros
+851 - Kansas City Royals
+852 - Los Angeles Angels
+853 - Los Angeles Dodgers
+854 - Miami Marlins
+855 - Milwaukee Brewers
+856 - Minnesota Twins
+857 - New York Mets
+858 - New York Yankees
+859 - Oakland Athletics
+860 - Philadelphia Phillies
+861 - Pittsburgh Pirates
+862 - San Diego Padres
+863 - San Francisco Giants
+864 - Seattle Mariners
+865 - St. Louis Cardinals
+866 - Tampa Bay Rays
+867 - Texas Rangers
+868 - Toronto Blue Jays
+869 - Washington Nationals
+880 - Atlanta Hawks
+881 - Boston Celtics
+882 - Brooklyn Nets
+883 - Charlotte Hornets
+884 - Chicago Bulls
+885 - Cleveland Cavaliers
+886 - Dallas Mavericks
+887 - Denver Nuggets
+888 - Detroit Pistons
+889 - Golden State Warriors
+890 - Houston Rockets
+891 - Indiana Pacers
+892 - Los Angeles Clippers
+893 - Los Angeles Lakers
+894 - Memphis Grizzlies
+895 - Miami Heat
+896 - Milwaukee Bucks
+897 - Minnesota Timberwolves
+898 - New Orleans Pelicans
+899 - New York Knicks
+900 - Oklahoma City Thunder
+901 - Orlando Magic
+902 - Philadelphia 76ers
+903 - Phoenix Suns
+904 - Portland Trail Blazers
+905 - Sacramento Kings
+906 - San Antonio Spurs
+907 - Toronto Raptors
+908 - Utah Jazz
+909 - Washington Wizards
+920 - NHL-ANA
+921 - NHL-ARI
+922 - NHL-BOS
+923 - NHL-BUF
+924 - NHL-CAR
+925 - NHL-CBJ
+926 - NHL-CGY
+927 - NHL-CHI
+928 - NHL-COL
+929 - NHL-DAL
+930 - NHL-DET
+931 - NHL-EDM
+932 - NHL-FLA
+933 - NHL-LA
+934 - NHL-MIN
+935 - NHL-MON
+936 - NHL-NJ
+937 - NHL-NSH
+938 - NHL-NYI
+939 - NHL-NYR
+940 - NHL-OTT
+941 - NHL-PHI
+942 - NHL-PIT
+943 - NHL-SJ
+944 - NHL-STL
+945 - NHL-TB
+946 - NHL-TOR
+947 - NHL-VAN
+948 - NHL-WAS
+949 - NHL-WPG
+960 - Sports Play-by-Play 960
+961 - Sports Play-by-Play 961
+962 - Sports Play-by-Play 962
+963 - Sports Play-by-Play 963
+964 - Sports Play-by-Play 964
+965 - Sports Play-by-Play 965
+966 - Sports Play-by-Play 966
+967 - Sports Play-by-Play 967
+968 - Sports Play-by-Play 968
+969 - Sports Play-by-Play 969
+970 - Deportes en Vivo 970
+971 - Deportes en Vivo 971
+972 - Deportes en Vivo 972
+973 - Deportes en Vivo 973
+974 - Deportes en Vivo 974
+975 - Deportes en Vivo 975
+976 - Deportes en Vivo 976
+977 - Deportes en Vivo 977
+978 - Deportes en Vivo 978
+979 - Deportes en Vivo 979
+980 - Deportes en Vivo 980
+981 - Deportes en Vivo 981
+982 - Deportes en Vivo 982
+983 - Deportes en Vivo 983
+984 - Deportes en Vivo 984
+985 - Deportes en Vivo 985
+986 - Deportes en Vivo 986
+987 - Deportes en Vivo 987
+988 - Deportes en Vivo 988
+989 - Deportes en Vivo 989
+990 - Deportes en Vivo 990
+991 - Deportes en Vivo 991
+992 - Deportes en Vivo 992
+993 - Deportes en Vivo 993
+994 - Deportes en Vivo 994
