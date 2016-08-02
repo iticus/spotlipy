@@ -39,6 +39,7 @@ for song in unprocessed_songs:
         spotify_song = spotify_api.search_song(song)
     except Exception as e:
         logger.error('cannot search for spotify song: %s' % e)
+        time.sleep(3)
         continue
         
     if spotify_song:
@@ -56,9 +57,19 @@ for song in unprocessed_songs:
 logger.info('performing tracks insert into spotify playlist')
 found_songs = database.get_found_songs()
 songs_by_playlist = {}
+existing_tracks = {}
 for song in found_songs:
-    if not song['spotify_playlist'] in songs_by_playlist:
-        songs_by_playlist[song['spotify_playlist']] = {'track_ids': [], 'song_ids': []}
+    playlist = song['spotify_playlist'] 
+    if not playlist in songs_by_playlist:
+        songs_by_playlist[playlist] = {'track_ids': [], 'song_ids': []}
+        existing_tracks[playlist] = spotify_api.get_tracks(playlist)
+        time.sleep(3)
+    
+    if song['spotify_uri'] in existing_tracks[playlist]:
+        logger.warning('skipping already existing track: %s' % song['spotify_uri'])
+        database.update_song(song['id'], 3, song['spotify_uri'])
+        continue
+    
     songs_by_playlist[song['spotify_playlist']]['track_ids'].append(song['spotify_uri'])
     songs_by_playlist[song['spotify_playlist']]['song_ids'].append(song['id'])
 
@@ -71,6 +82,7 @@ for playlist_url, values in songs_by_playlist.items():
         del values['song_ids'][:100]
         logging.info('inserting %d tracks into %s' % (len(tracks_ids), playlist_url))
         try:
+            time.sleep(3)
             spotify_api.add_tracks(playlist_url, tracks_ids)
         except Exception as e:
             logging.error('cannot add tracks to playlist: %s' % e)

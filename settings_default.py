@@ -17,6 +17,7 @@ DSN = "dbname='spotlipy' user='postgres' host='127.0.0.1' password='password'"
 
 #dogstarradio search URL
 SEARCH_URL = 'http://www.dogstarradio.com/search_playlist.php'
+JUNK_INDICATORS = ['@', '#', '.com', 'Hip Hop Nation', 'SiriusXM']
 
 #for stations numbers and names see stations.txt
 STATIONS = [
