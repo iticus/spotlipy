@@ -49,7 +49,17 @@ def get_songs_from_html(html):
         }
         
         if not song['artist'] or not song['title']:
+            logger.warning('skiping empty track: %s' % song)
             continue #empty data from website
+        
+        junk_data = False
+        for junk_indicator in settings.JUNK_INDICATORS:
+            if junk_indicator in song['artist'] or junk_indicator in song['title']:
+                junk_data = True
+                break
+        if junk_data:
+            logger.warning('skiping junk track: %s' % song)
+            continue #junk radio entries
         
         logger.debug('found song: %s' % song)
         songs.append(song)
