@@ -24,8 +24,9 @@ STATIONS = [
     34, 44
 ]
 
-MONTH = 7
-DATE = 22
+#if MONTH or DATE are None we will use yesterday for searching
+MONTH = None
+DATE = None
 
 #Spotify settings
 SPOTIFY = {

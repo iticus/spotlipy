@@ -22,7 +22,7 @@ def radio_search():
     date = settings.DATE
     logger.info('performing radio search')
     for station in settings.STATIONS:
-        logger.info('searching songs on station %d, month: %d, date: %d' % (
+        logger.info('searching songs on station %s, month: %s, date: %s' % (
             station, month, date))
         songs = radiosearch.find_songs(station, month, date)
         for song in songs:

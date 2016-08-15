@@ -67,9 +67,14 @@ def get_songs_from_html(html):
     return songs
 
 
-def find_songs(channel, month, date):
+def find_songs(channel, month=None, date=None):
     songs = []
     data = {}
+    if not month or not date:
+        dt = datetime.datetime.now() - datetime.timedelta(days=1)
+        month = dt.month
+        date = dt.day
+    
     data['channel'] = channel
     data['month'] = month
     data['date'] = date
