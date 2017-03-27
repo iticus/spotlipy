@@ -1,9 +1,9 @@
 # spotlipy
 Python application to populate Spotify playlists with songs from radio stations
 
-##Installation
+## Installation
 
-###Dependencies
+### Dependencies
 
  - sudo aptitude update
  - sudo aptitude install postgresql-9.3 postgresql-server-dev-9.3 
@@ -12,7 +12,7 @@ Python application to populate Spotify playlists with songs from radio stations
 
 Copy project files on your computer or use `git clone https://github.com/iticus/spotlipy.git`
 
-###Database
+### Database
 
  - login as postgres user: `sudo -iu postgres bash`
  - use the builtin client: `psql` and enter the following:
@@ -21,7 +21,7 @@ Copy project files on your computer or use `git clone https://github.com/iticus/
    paste contents of `database.sql`
  - exit
 
-###Settings
+### Settings
 
  - `cp settings_default.py settings.py`
  - `nano settings` and edit relevant entries
@@ -31,10 +31,10 @@ Copy project files on your computer or use `git clone https://github.com/iticus/
   - spotify credentials (register your app and get them from the Spotify developer page)
 
 
-##Run
+## Run
 Run `python3 spotlipy.py` or make a cron entry for example. On first run you need to authorize the request (just open the given URL in your browser, login and paste back the URL received).
 
 
-##Notes
+## Notes
 
 The callback URL should be changed to something you own preferably.
